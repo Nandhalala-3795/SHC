@@ -16,6 +16,10 @@ public class BaseClass {
 
 	private WebDriver driver;
 	
+	private String username = ConfigurationReader.get(ConfigurationValues.username);
+	
+	private String password = ConfigurationReader.get(ConfigurationValues.password);
+	
 	@BeforeMethod
 	public void setup() {
 		Driver.initDriver();
@@ -32,6 +36,14 @@ public class BaseClass {
 	
 	public WebDriver getDriver() {
 		return driver;
+	}
+	
+	public String get_Username() {
+		return username;
+	}
+	
+	public String get_Password() {
+		return password;
 	}
 	
 }

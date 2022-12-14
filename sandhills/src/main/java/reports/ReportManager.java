@@ -16,7 +16,7 @@ public class ReportManager {
 	/**
 	 * For thread safety using this variable
 	 */
-	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>() ;
+	private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>() ;
 	
 	/**
 	 * returns the extent test from thread safe variable

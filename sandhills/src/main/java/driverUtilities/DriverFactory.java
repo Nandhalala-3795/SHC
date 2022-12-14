@@ -42,6 +42,7 @@ public class DriverFactory {
 				driver = new FirefoxDriver();
 			}
 		}
+		driver.manage().window().maximize();
 		return driver;
 	}
 	

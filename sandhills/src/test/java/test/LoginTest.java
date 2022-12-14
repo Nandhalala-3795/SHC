@@ -11,7 +11,7 @@ import wait.WaitFactory;
 public class LoginTest extends BaseClass {
 
 	@Test
-	public void mcologintest() {
+	public void mcologintest() throws InterruptedException {
 		
 		Home home = new Home(getDriver());
 		
@@ -19,7 +19,7 @@ public class LoginTest extends BaseClass {
 		
 		loginpg.Login("shc/shctest", "Letmein@13");
 		
-		WaitFactory.waitforload(30);
+		WaitFactory.waitforloading();
 		
 	}
 	
@@ -32,7 +32,7 @@ public class LoginTest extends BaseClass {
 		
 		portalloginpg.Login("UATpermissiontest@portal.com", "Letmein@4");
 		
-		WaitFactory.waitforload(30);
+		WaitFactory.waitforloading();
 		
 	}
 	

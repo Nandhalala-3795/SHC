@@ -21,7 +21,7 @@ public class PropertyFileReader {
 	 * Map to store property value in key and value pair
 	 */
 	private static Properties property = new Properties();
-	private static final Map<String, String> configmap = new HashMap<>();
+	private static final Map<String, String> configmap = new HashMap<String, String>();
 	
 	/**
 	 * Constructor with file parameter

@@ -27,7 +27,7 @@ public class Reports {
 	 */
 	public static void initReports() {
 		if(Objects.isNull(extent)) {
-			String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+			String dateName = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
 			File file = new File(Constants.ReportsPath+"/Report "+dateName+".html");
 			extent = new ExtentReports();
 			ExtentSparkReporter spark = new ExtentSparkReporter(file); 

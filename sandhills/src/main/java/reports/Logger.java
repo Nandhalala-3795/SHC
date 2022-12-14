@@ -5,9 +5,7 @@ import org.testng.Reporter;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
-import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-
 import constants.ConfigurationValues;
 import fileReaders.ConfigurationReader;
 import screenshots.ScreenShot;
@@ -30,14 +28,20 @@ public final class Logger {
 				.equalsIgnoreCase("yes")) {
 			
 			Reporter.log("----[PASS]----"+message, true);
+			//Reporter.log(ScreenShot.encodeforreport());
 			ReportManager.getExtentTest()
 			.log(Status.PASS, MarkupHelper.createLabel(message, ExtentColor.GREEN));
 			
-			Reporter.log("----[PASS]----"+message+"\n"+ScreenShot.TakeScreenshot(), true);
+			Reporter.log("----[PASS]----"
+			+"\n"+"<br><img src = \" "+ScreenShot.TakeScreenshot("report")+"\" width = 800 length = 800/</br>");
+			
+			
 			ReportManager.getExtentTest()
-			.log(Status.PASS, 
-					(Markup) MediaEntityBuilder
-					.createScreenCaptureFromBase64String(ScreenShot.TakeScreenshot()));
+			.log(Status.PASS,
+					MediaEntityBuilder
+					.createScreenCaptureFromPath(ScreenShot.TakeScreenshot("extent")).build());
+			
+			
 		}
 		else {
 			Reporter.log("----[PASS]----"+message, true);
@@ -55,14 +59,18 @@ public final class Logger {
 				.equalsIgnoreCase("yes")) {
 			
 			Reporter.log("----[FAIL]----"+message, true);
+			//Reporter.log(ScreenShot.encodeforreport());
 			ReportManager.getExtentTest()
 			.log(Status.FAIL, MarkupHelper.createLabel(message, ExtentColor.RED));
 			
-			Reporter.log("----[FAIL]----"+message+"\n"+ScreenShot.TakeScreenshot(), true);
+			Reporter.log("----[FAIL]----"+message+"\n"+ScreenShot.TakeScreenshot("report"), true);
 			ReportManager.getExtentTest()
 			.log(Status.FAIL, 
-					(Markup) MediaEntityBuilder
-					.createScreenCaptureFromBase64String(ScreenShot.TakeScreenshot()));
+					MediaEntityBuilder
+					.createScreenCaptureFromPath(ScreenShot.TakeScreenshot("extent")).build());
+			
+	
+			
 		}
 		else {
 			Reporter.log("----[FAIL]----"+message, true);

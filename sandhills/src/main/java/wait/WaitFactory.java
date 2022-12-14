@@ -24,14 +24,14 @@ public class WaitFactory {
 	 * @param driver
 	 * @param timeout
 	 */
-	public static void waitforload(int timeoutinseconds) {
+	public static void waitforloading () {
 		
 		wait = new WebDriverWait(DriverManager.getDriver(), 
-				Duration.ofSeconds(timeoutinseconds));
+				Duration.ofSeconds(210));
 		
 		wait.until(ExpectedConditions
 				.invisibilityOfElementWithText
-				(By.xpath("//div[text()='Loading']"), "Loading"));;
+				(By.xpath("//div[text()='Loading']"), "Loading"));
 		
 	}
 	

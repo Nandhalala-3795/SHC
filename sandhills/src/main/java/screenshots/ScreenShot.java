@@ -19,23 +19,39 @@ public class ScreenShot {
 	private static FileInputStream fis = null;
 	private static File destination = null;
 	
-	public static String TakeScreenshot() {
+	public static String TakeScreenshot(String reporttype) {
 		try {
-			String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+			String dateName = new SimpleDateFormat("yyyy-MM-dd-hh-mm-ss").format(new Date());
 			TakesScreenshot takesScreenshot = (TakesScreenshot) DriverManager.getDriver();
 			File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-			String destinationPath = constants.Constants.ScreenShotsPath+"/"+" "+dateName+".png";
+			String destinationPath = constants.Constants.ScreenShotsPath+"/Screenshot "+dateName+".png";
 			destination = new File(destinationPath);
 			FileUtils.copyFile(source, destination);
-			return encodeforreport();
+			try {
+		        fis =new FileInputStream(destination);
+		        byte[] bytes =new byte[(int)destination.length()];
+		        fis.read(bytes);
+		        encodedBase64 = new String(org.apache.commons.codec.binary.Base64.encodeBase64String(bytes));
+		        fis.close();
+		    }catch (FileNotFoundException e){
+		        e.printStackTrace();
+		    } catch (IOException e) {
+				
+				e.printStackTrace();
+			}
+			if(reporttype.equals("extent"))
+				return destinationPath;
+			else
+				return "data:image/png;base64,"+encodedBase64;
 			}catch(Exception e) {
 				
 				e.printStackTrace();
 				return null;
 			}
 	}
+
 	
-private static String encodeforreport() {
+	public static String encodeforreport() {
 		
 		try {
 	        fis =new FileInputStream(destination);

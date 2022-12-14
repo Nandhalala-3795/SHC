@@ -4,11 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
-
 import driverUtilities.DriverActions;
 import objectRepository.MCOLoginpage_OR;
-import reports.Logger;
+import objectRepository.common_OR;
+import wait.WaitFactory;
 
 public class MCOLoginpage {
 
@@ -20,6 +19,9 @@ public class MCOLoginpage {
 	
 	@FindBy(xpath = MCOLoginpage_OR.btn_Login)
 	private WebElement btn_Login;
+
+	@FindBy(xpath = common_OR.Loading)
+	private WebElement loading;
 	
 	@SuppressWarnings("unused")
 	private WebDriver driver;
@@ -29,18 +31,19 @@ public class MCOLoginpage {
 		this.driver = driver;
 	}
 	
-	public void Login(String username, String password) {
+	public MCOHomepage Login(String username, String password) {
 		
-		DriverActions.entertext(btn_Login, username);
-		Reporter.log(username + " is entered in username field",true);
-		Logger.LogInfo(username + " is entered in username field");
+		DriverActions.entertext(txt_Username, username, MCOLoginpage_OR.username_ele_name);
 		
-		txt_Password.sendKeys(password);
-		Reporter.log(password + " is entered in password field",true);
-		Logger.LogInfo(password + " is entered in password field");
-		DriverActions.Click(btn_Login);
-		Reporter.log("Login button is clicked",true);
-		Logger.LogInfo("Login button is clicked");
+		DriverActions.entertext(txt_Password, password, MCOLoginpage_OR.password_ele_name);
+		
+		DriverActions.Click(btn_Login, MCOLoginpage_OR.login_ele_name);
+		
+		if(loading.isDisplayed())
+		WaitFactory.waitforloading();
+		
+		return new MCOHomepage(driver);
 	}
 	
 }
+

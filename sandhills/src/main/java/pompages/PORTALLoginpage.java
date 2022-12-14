@@ -4,11 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
-
 import driverUtilities.DriverActions;
 import objectRepository.PORTALLoginpage_OR;
-import reports.Logger;
 import wait.WaitFactory;
 
 public class PORTALLoginpage {
@@ -31,18 +28,13 @@ public class PORTALLoginpage {
 	}
 	
 	public void Login(String username, String password) {
-		txt_Username.sendKeys(username);
-		Reporter.log(username + " is entered in username field",true);
-		Logger.LogInfo(username + " is entered in username field");
-		txt_Password.sendKeys(password);
-		Reporter.log(password + " is entered in password field",true);
-		Logger.LogInfo(password + " is entered in password field");
+		DriverActions.entertext(txt_Username, username, PORTALLoginpage_OR.username_ele_name);
 		
-		WaitFactory.waitforload(30);
+		DriverActions.entertext(txt_Password, password, PORTALLoginpage_OR.password_ele_name);
 		
-		DriverActions.Click(btn_Login);
-		Reporter.log("Login button is clicked",true);
-		Logger.LogInfo("Login button is clicked");
+		DriverActions.Click(btn_Login, PORTALLoginpage_OR.login_ele_name);
+		
+		WaitFactory.waitforloading();
 	}
 	
 }

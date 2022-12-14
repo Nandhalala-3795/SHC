@@ -7,6 +7,8 @@ package constants;
  */
 public enum ConfigurationValues {
 URL,
+username,
+password,
 OverRideReports,
 passedstepsscreenshots,
 failedstepsscreenshots,
