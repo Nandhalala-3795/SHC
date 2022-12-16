@@ -16,7 +16,6 @@ public class DriverActions {
 			try {
 				if(Element_Present(Element)) {
 					Element.click();
-					Logger.LogPass("Element '" + ElementName + "' is clicked");
 					break;
 				}
 				else {

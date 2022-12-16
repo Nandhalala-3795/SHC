@@ -1,5 +1,7 @@
 package pompages;
 
+import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,16 +15,12 @@ public class Home {
 
 	@FindBy(xpath = Home_OR.txt_Heading)
 	private WebElement heading;
-	@SuppressWarnings("unused")
-	private String heading_ele_name = "Heading";
 	
 	@FindBy(xpath = Home_OR.MCO_Link)
 	private WebElement MCOLINK;
-	private String mcolink_ele_name = "MCO LINK";
 	
 	@FindBy(xpath = Home_OR.PORTAL_Link)
 	private WebElement PORTALLINK;
-	private String portallink_ele_name = "Portal LINK";
 	
 	private WebDriver driver;
 	
@@ -32,13 +30,14 @@ public class Home {
 	}
 	
 	public MCOLoginpage ClickMCOloginlink(){
-		DriverActions.Click(MCOLINK,mcolink_ele_name);
+		DriverActions.Click(MCOLINK,Home_OR.mcolink_ele_name);
+		
 		WaitFactory.waitforloading();
 		return new MCOLoginpage(driver);
 	}
 	
 	public PORTALLoginpage ClickPORTALloginlink() {
-		DriverActions.Click(PORTALLINK,portallink_ele_name);
+		DriverActions.Click(PORTALLINK,Home_OR.portallink_ele_name);
 		WaitFactory.waitforloading();
 		return new PORTALLoginpage(driver);
 	}
