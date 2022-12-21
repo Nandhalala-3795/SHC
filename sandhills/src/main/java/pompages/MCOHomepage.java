@@ -60,7 +60,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_patientModule, MCOHomepage_OR.patmod_ele_name);
+		DriverActions.click(link_patientModule, MCOHomepage_OR.patmod_ele_name);
 		return new MCOPatientModule(driver);
 	}
 	
@@ -69,7 +69,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_providerNetwork, MCOHomepage_OR.providernetwork_ele_name);
+		DriverActions.click(link_providerNetwork, MCOHomepage_OR.providernetwork_ele_name);
 		return new MCOProviderNetwork(driver);
 	}
 	
@@ -78,7 +78,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_Finance, MCOHomepage_OR.finance_ele_name);
+		DriverActions.click(link_Finance, MCOHomepage_OR.finance_ele_name);
 		return new MCOFinance(driver);
 	}
 	
@@ -87,7 +87,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_Clinical, MCOHomepage_OR.Clinical_ele_name);
+		DriverActions.click(link_Clinical, MCOHomepage_OR.Clinical_ele_name);
 		return new MCOClinical(driver);
 	}
 	
@@ -96,7 +96,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_CareCoordination, MCOHomepage_OR.CC_ele_name);
+		DriverActions.click(link_CareCoordination, MCOHomepage_OR.CC_ele_name);
 		return new MCOCareCoordination(driver);
 	}
 	
@@ -105,7 +105,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_Grievance, MCOHomepage_OR.Grievance_ele_name);
+		DriverActions.click(link_Grievance, MCOHomepage_OR.Grievance_ele_name);
 		return new MCOGrievace(driver);
 	}
 	
@@ -114,7 +114,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_Reports, MCOHomepage_OR.Rpt_ele_name);
+		DriverActions.click(link_Reports, MCOHomepage_OR.Rpt_ele_name);
 		return new MCOReports(driver);
 	}
 	
@@ -123,7 +123,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_Master, MCOHomepage_OR.Mstr_ele_name);
+		DriverActions.click(link_Master, MCOHomepage_OR.Mstr_ele_name);
 		return new MCOMaster(driver);
 	}
 	
@@ -132,7 +132,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_usr_prfl, MCOHomepage_OR.usr_prfl_ele_name);
+		DriverActions.click(link_usr_prfl, MCOHomepage_OR.usr_prfl_ele_name);
 		return new MCOUserProfile(driver);
 	}
 	
@@ -141,7 +141,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_unst, MCOHomepage_OR.unst_ele_name);
+		DriverActions.click(link_unst, MCOHomepage_OR.unst_ele_name);
 		return new MCOUniversity(driver);
 	}
 	
@@ -150,7 +150,7 @@ public class MCOHomepage {
 		if(loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_lms, MCOHomepage_OR.unst_ele_name);
+		DriverActions.click(link_lms, MCOHomepage_OR.unst_ele_name);
 		return new MCOLMS(driver);
 	}
 	

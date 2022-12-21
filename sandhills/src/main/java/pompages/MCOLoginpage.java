@@ -37,7 +37,7 @@ public class MCOLoginpage {
 		
 		DriverActions.entertext(txt_Password, password, MCOLoginpage_OR.password_ele_name);
 		
-		DriverActions.Click(btn_Login, MCOLoginpage_OR.login_ele_name);
+		DriverActions.click(btn_Login, MCOLoginpage_OR.login_ele_name);
 		
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();

@@ -52,7 +52,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_patmaint,MCOPatientModule_OR.patmaint_ele_name);
+		DriverActions.click(link_patmaint,MCOPatientModule_OR.patmaint_ele_name);
 		
 		Logger.LogPass("Clicked on Patient Maintenance");
 		
@@ -67,7 +67,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_patmerge,MCOPatientModule_OR.patmer_ele_name);
+		DriverActions.click(link_patmerge,MCOPatientModule_OR.patmer_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -78,7 +78,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_enrollment,MCOPatientModule_OR.enroll_ele_name);
+		DriverActions.click(link_enrollment,MCOPatientModule_OR.enroll_ele_name);
 		
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
@@ -90,7 +90,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_cdwerr,MCOPatientModule_OR.cdwerr_ele_name);
+		DriverActions.click(link_cdwerr,MCOPatientModule_OR.cdwerr_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -101,7 +101,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_cdwerr,MCOPatientModule_OR.NCTracks_ele_name);
+		DriverActions.click(link_cdwerr,MCOPatientModule_OR.NCTracks_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -112,7 +112,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_Discharge, MCOPatientModule_OR.discharge_ele_name);
+		DriverActions.click(link_Discharge, MCOPatientModule_OR.discharge_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -123,7 +123,7 @@ public class MCOPatientModule {
 		if(loading.isDisplayed())
 		WaitFactory.waitforloading();
 		
-		DriverActions.Click(link_ClientUpdate, MCOPatientModule_OR.clintupdt_ele_name);
+		DriverActions.click(link_ClientUpdate, MCOPatientModule_OR.clintupdt_ele_name);
 		
 		WaitFactory.waitforloading();
 		

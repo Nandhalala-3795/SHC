@@ -53,14 +53,14 @@ public class MCOClinical {
 	}
 	
 	private void click_Utilization_Management() {
-		DriverActions.Click(Utilization_management, MCOClinical_OR.UM_ele_name);
+		DriverActions.click(Utilization_management, MCOClinical_OR.UM_ele_name);
 	}
 	
 	public MCOSARPage Click_SAR() {
 		if(!SAR.isDisplayed())
 			click_Utilization_Management();
 		
-		DriverActions.Click(SAR, MCOClinical_OR.sar_ele_name);
+		DriverActions.click(SAR, MCOClinical_OR.sar_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -71,7 +71,7 @@ public class MCOClinical {
 		if(!SAR.isDisplayed())
 			click_Utilization_Management();
 		
-		DriverActions.Click(Treatment_Plan, MCOClinical_OR.TX_PN_ele_name);
+		DriverActions.click(Treatment_Plan, MCOClinical_OR.TX_PN_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -82,7 +82,7 @@ public class MCOClinical {
 		if(!Authorization.isDisplayed())
 			click_Utilization_Management();
 		
-		DriverActions.Click(Authorization, MCOClinical_OR.auth_ele_name);
+		DriverActions.click(Authorization, MCOClinical_OR.auth_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -93,7 +93,7 @@ public class MCOClinical {
 		if(!Routing_Rules.isDisplayed())
 			click_Utilization_Management();
 		
-		DriverActions.Click(Routing_Rules, MCOClinical_OR.RoutRles_ele_name);
+		DriverActions.click(Routing_Rules, MCOClinical_OR.RoutRles_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -101,14 +101,14 @@ public class MCOClinical {
 	}
 	
 	private void click_Call_Center() {
-		DriverActions.Click(Call_center, MCOClinical_OR.call_cntr_ele_name);
+		DriverActions.click(Call_center, MCOClinical_OR.call_cntr_ele_name);
 	}
 	
 	public MCOCallsPage Click_Calls() {
 		if(!Calls.isDisplayed())
 			click_Call_Center();
 		
-		DriverActions.Click(Calls, MCOClinical_OR.calls_ele_name);
+		DriverActions.click(Calls, MCOClinical_OR.calls_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -119,7 +119,7 @@ public class MCOClinical {
 		if(!Referral_Search.isDisplayed())
 			click_Utilization_Management();
 		
-		DriverActions.Click(Referral_Search, MCOClinical_OR.ref_search_ele_name);
+		DriverActions.click(Referral_Search, MCOClinical_OR.ref_search_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -128,7 +128,7 @@ public class MCOClinical {
 	
 	public MCORegUnmetNeedsInnovationsPage Click_RegUnmetNeedsInnovations() {
 
-		DriverActions.Click(reg_unmet_needs, MCOClinical_OR.unmet_ele_name);
+		DriverActions.click(reg_unmet_needs, MCOClinical_OR.unmet_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		
@@ -137,7 +137,7 @@ public class MCOClinical {
 	
 	public MCOBackupStaffingPage Click_BackupStaffing() {
 
-		DriverActions.Click(Backup_staffing, MCOClinical_OR.bckstf_ele_name);
+		DriverActions.click(Backup_staffing, MCOClinical_OR.bckstf_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		

@@ -21,7 +21,7 @@ public class MCOClaimMaintenancePage {
 	}
 
 	public MCOHomepage return_homne() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		return new MCOHomepage(driver);
 	}
 	

@@ -32,7 +32,7 @@ public class PORTALLoginpage {
 		
 		DriverActions.entertext(txt_Password, password, PORTALLoginpage_OR.password_ele_name);
 		
-		DriverActions.Click(btn_Login, PORTALLoginpage_OR.login_ele_name);
+		DriverActions.click(btn_Login, PORTALLoginpage_OR.login_ele_name);
 		
 		WaitFactory.waitforloading();
 	}

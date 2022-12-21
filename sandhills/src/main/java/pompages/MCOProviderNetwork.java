@@ -31,7 +31,7 @@ public class MCOProviderNetwork {
 	}
 
 	public MCOProviderMaintenancepage click_providermaintenance() {
-		DriverActions.Click(link_provider_maintenance, MCOProviderNetwork_OR.Providermaint_ele_name);
+		DriverActions.click(link_provider_maintenance, MCOProviderNetwork_OR.Providermaint_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -39,7 +39,7 @@ public class MCOProviderNetwork {
 	}
 	
 	public MCOClinicianMaintenancepage click_ClinicianMaintenance() {
-		DriverActions.Click(link_clinician_maintenance, MCOProviderNetwork_OR.clinmaint_ele_name);
+		DriverActions.click(link_clinician_maintenance, MCOProviderNetwork_OR.clinmaint_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -47,7 +47,7 @@ public class MCOProviderNetwork {
 	}
 	
 	public MCOProviderMeasurepage click_ProviderMeasure() {
-		DriverActions.Click(link_provider_measures, MCOProviderNetwork_OR.providermeasures_ele_name);
+		DriverActions.click(link_provider_measures, MCOProviderNetwork_OR.providermeasures_ele_name);
 		
 		WaitFactory.waitforloading();
 		
@@ -55,7 +55,7 @@ public class MCOProviderNetwork {
 	}
 	
 	public MCOCredentiallingpluspage click_Credentiallingplus() {
-		DriverActions.Click(link_credplus, MCOProviderNetwork_OR.credplus_ele_name);
+		DriverActions.click(link_credplus, MCOProviderNetwork_OR.credplus_ele_name);
 		
 		WaitFactory.waitforloading();
 		

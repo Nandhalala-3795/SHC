@@ -116,19 +116,19 @@ public class MCOMaster {
 	}
 	
 	public MCOHomepage return_home() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		return new MCOHomepage(driver);
 	}
 	
 	private void click_UserMaintenance() {
-		DriverActions.Click(UserMaintenance, MCOMaster_OR.Usr_mnt_ele_name);
+		DriverActions.click(UserMaintenance, MCOMaster_OR.Usr_mnt_ele_name);
 	}
 	
 	public MCOSystemUsers click_SystemUsers() {
 		if(!SystemUsers.isDisplayed())
 		click_UserMaintenance();
 		
-		DriverActions.Click(SystemUsers, MCOMaster_OR.Usr_mnt_ele_name);
+		DriverActions.click(SystemUsers, MCOMaster_OR.Usr_mnt_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -140,7 +140,7 @@ public class MCOMaster {
 		if(!SystemUsers.isDisplayed())
 		click_UserMaintenance();
 		
-		DriverActions.Click(UserRoles, MCOMaster_OR.Usr_rls_ele_name);
+		DriverActions.click(UserRoles, MCOMaster_OR.Usr_rls_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -152,7 +152,7 @@ public class MCOMaster {
 		if(!SystemUsers.isDisplayed())
 		click_UserMaintenance();
 		
-		DriverActions.Click(FunctionalGroups, MCOMaster_OR.Fn_grp_ele_name);
+		DriverActions.click(FunctionalGroups, MCOMaster_OR.Fn_grp_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -164,7 +164,7 @@ public class MCOMaster {
 		if(!SystemUsers.isDisplayed())
 		click_UserMaintenance();
 		
-		DriverActions.Click(Departments, MCOMaster_OR.Dept_ele_name);
+		DriverActions.click(Departments, MCOMaster_OR.Dept_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -176,7 +176,7 @@ public class MCOMaster {
 		if(!SystemUsers.isDisplayed())
 		click_UserMaintenance();
 		
-		DriverActions.Click(PortalUsers, MCOMaster_OR.prtl_usr_ele_name);
+		DriverActions.click(PortalUsers, MCOMaster_OR.prtl_usr_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -185,14 +185,14 @@ public class MCOMaster {
 	}
 	
 	private void click_MasterMaintenance() {
-		DriverActions.Click(MasterMaintenance, MCOMaster_OR.mstr_maint_ele_name);
+		DriverActions.click(MasterMaintenance, MCOMaster_OR.mstr_maint_ele_name);
 	}
 	
 	public MCOGuidelines click_Guidelines () {
 		if(!Guidelines.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(Guidelines, MCOMaster_OR.guidelines_ele_name);
+		DriverActions.click(Guidelines, MCOMaster_OR.guidelines_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -205,7 +205,7 @@ public class MCOMaster {
 		if(!Guidelines.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(Dropdowns, MCOMaster_OR.dd_ele_name);
+		DriverActions.click(Dropdowns, MCOMaster_OR.dd_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -218,7 +218,7 @@ public class MCOMaster {
 		if(!Guidelines.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(anc_mnt, MCOMaster_OR.ancmaint_ele_name);
+		DriverActions.click(anc_mnt, MCOMaster_OR.ancmaint_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -231,7 +231,7 @@ public class MCOMaster {
 		if(!MSR_mnt.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(MSR_mnt, MCOMaster_OR.msrmaint_ele_name);
+		DriverActions.click(MSR_mnt, MCOMaster_OR.msrmaint_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -244,7 +244,7 @@ public class MCOMaster {
 		if(!MSR_mnt.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(Cred_chk_lst, MCOMaster_OR.msrmaint_ele_name);
+		DriverActions.click(Cred_chk_lst, MCOMaster_OR.msrmaint_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -257,7 +257,7 @@ public class MCOMaster {
 		if(!MSR_mnt.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(cust_fld_mgnt, MCOMaster_OR.cst_fld_mgnt_ele_name);
+		DriverActions.click(cust_fld_mgnt, MCOMaster_OR.cst_fld_mgnt_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -270,7 +270,7 @@ public class MCOMaster {
 		if(!MSR_mnt.isDisplayed())
 			click_MasterMaintenance();
 		
-		DriverActions.Click(tsk_lst_mgnt, MCOMaster_OR.tsl_lst_mgnt_ele_name);
+		DriverActions.click(tsk_lst_mgnt, MCOMaster_OR.tsl_lst_mgnt_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -280,14 +280,14 @@ public class MCOMaster {
 	}
 	
 	private void click_ServiceMaintenance() {
-		DriverActions.Click(ServiceMaintenance, MCOMaster_OR.srvc_mnt_ele_name);
+		DriverActions.click(ServiceMaintenance, MCOMaster_OR.srvc_mnt_ele_name);
 	}
 	
 	public MCOServiceMatrix click_ServiceMatrix () {
 		if(!srvc_mat.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(srvc_mat, MCOMaster_OR.srvc_mat_ele_name);
+		DriverActions.click(srvc_mat, MCOMaster_OR.srvc_mat_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -300,7 +300,7 @@ public class MCOMaster {
 		if(!bp.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(bp, MCOMaster_OR.bp_pln_ele_name);
+		DriverActions.click(bp, MCOMaster_OR.bp_pln_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -313,7 +313,7 @@ public class MCOMaster {
 		if(!defn.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(defn, MCOMaster_OR.def_ele_name);
+		DriverActions.click(defn, MCOMaster_OR.def_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -326,7 +326,7 @@ public class MCOMaster {
 		if(!lic_grp.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(lic_grp, MCOMaster_OR.lic_grp_ele_name);
+		DriverActions.click(lic_grp, MCOMaster_OR.lic_grp_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -339,7 +339,7 @@ public class MCOMaster {
 		if(!age_grp.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(age_grp, MCOMaster_OR.age_grp_ele_name);
+		DriverActions.click(age_grp, MCOMaster_OR.age_grp_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -352,7 +352,7 @@ public class MCOMaster {
 		if(!pos.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(pos, MCOMaster_OR.pos_ele_name);
+		DriverActions.click(pos, MCOMaster_OR.pos_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -365,7 +365,7 @@ public class MCOMaster {
 		if(!diag_grp_srvc.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(diag_grp_srvc, MCOMaster_OR.dia_grp_srvc_ele_name);
+		DriverActions.click(diag_grp_srvc, MCOMaster_OR.dia_grp_srvc_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -378,7 +378,7 @@ public class MCOMaster {
 		if(!diag_grp_diag.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(diag_grp_diag, MCOMaster_OR.diag_grp_diag_ele_name);
+		DriverActions.click(diag_grp_diag, MCOMaster_OR.diag_grp_diag_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -391,7 +391,7 @@ public class MCOMaster {
 		if(!ibhs.isDisplayed())
 			click_ServiceMaintenance();
 		
-		DriverActions.Click(ibhs, MCOMaster_OR.ibhs_ele_name);
+		DriverActions.click(ibhs, MCOMaster_OR.ibhs_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -402,7 +402,7 @@ public class MCOMaster {
 	
 	public MCOUserAudit click_USER_Audit () {
 			
-		DriverActions.Click(usr_adt, MCOMaster_OR.usr_adt_ele_name);
+		DriverActions.click(usr_adt, MCOMaster_OR.usr_adt_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
@@ -413,7 +413,7 @@ public class MCOMaster {
 	
 	public MCOGEFExclusion click_GEF_Exclusion () {
 		
-		DriverActions.Click(gef_excln, MCOMaster_OR.gef_ele_name);
+		DriverActions.click(gef_excln, MCOMaster_OR.gef_ele_name);
 		
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();

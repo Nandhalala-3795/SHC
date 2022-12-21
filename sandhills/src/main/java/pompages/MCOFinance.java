@@ -83,14 +83,14 @@ public class MCOFinance {
 	}
 	
 	public MCOHomepage return_home() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOHomepage(driver);
 	}
 	
 	private void click_claims() {
-		DriverActions.Click(link_claims, MCOFinance_OR.claims_ele_name);
+		DriverActions.click(link_claims, MCOFinance_OR.claims_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 	}
@@ -99,7 +99,7 @@ public class MCOFinance {
 		if(!claim_maintenance.isDisplayed())
 		click_claims();
 		
-		DriverActions.Click(claim_maintenance, MCOFinance_OR.claimmaint_ele_name);
+		DriverActions.click(claim_maintenance, MCOFinance_OR.claimmaint_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOClaimMaintenancePage(driver);
@@ -108,7 +108,7 @@ public class MCOFinance {
 	public MCOClaimExceptionPage click_ClaimException() {
 		if(!claim_exception.isDisplayed())
 		click_claims();
-		DriverActions.Click(claim_exception, MCOFinance_OR.claims_ele_name);
+		DriverActions.click(claim_exception, MCOFinance_OR.claims_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOClaimExceptionPage(driver);
@@ -117,28 +117,28 @@ public class MCOFinance {
 	public MCOGLAccountmanagementPage click_GLAccountManagement() {
 		if(!GL_Account_Management.isDisplayed())
 		click_claims();
-		DriverActions.Click(GL_Account_Management, MCOFinance_OR.GLaccmgnt_ele_name);
+		DriverActions.click(GL_Account_Management, MCOFinance_OR.GLaccmgnt_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOGLAccountmanagementPage(driver);
 	}
 	
 	public MCOCMS1500Page click_CMS1500() {
-		DriverActions.Click(CMS1500, MCOFinance_OR.cms_ele_name);
+		DriverActions.click(CMS1500, MCOFinance_OR.cms_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOCMS1500Page(driver);
 	}
 	
 	public MCOUB04Page click_UB04() {
-		DriverActions.Click(UB04, MCOFinance_OR.ub04_ele_name);
+		DriverActions.click(UB04, MCOFinance_OR.ub04_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOUB04Page(driver);
 	}
 	
 	private void click_clmbts() {
-		DriverActions.Click(Claim_Batches, MCOFinance_OR.clmbt_ele_name);
+		DriverActions.click(Claim_Batches, MCOFinance_OR.clmbt_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 	}
@@ -147,7 +147,7 @@ public class MCOFinance {
 		if(!_835Processing.isDisplayed())
 		click_clmbts();
 		
-		DriverActions.Click(_835Processing, MCOFinance_OR._835prcs_ele_name);
+		DriverActions.click(_835Processing, MCOFinance_OR._835prcs_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCO835processingPage(driver);
@@ -157,7 +157,7 @@ public class MCOFinance {
 		if(!Generate_835.isDisplayed())
 		click_clmbts();
 		
-		DriverActions.Click(Generate_835, MCOFinance_OR.gnrt835_ele_name);
+		DriverActions.click(Generate_835, MCOFinance_OR.gnrt835_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOGenerate835Page(driver);
@@ -167,7 +167,7 @@ public class MCOFinance {
 		if(!Batch_Readjudication.isDisplayed())
 		click_clmbts();
 		
-		DriverActions.Click(Batch_Readjudication, MCOFinance_OR.bt_readj_ele_name);
+		DriverActions.click(Batch_Readjudication, MCOFinance_OR.bt_readj_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOBatchReAdjudicationPage(driver);
@@ -177,63 +177,63 @@ public class MCOFinance {
 		if(!_837.isDisplayed())
 		click_clmbts();
 		
-		DriverActions.Click(_837, MCOFinance_OR._837_ele_name);
+		DriverActions.click(_837, MCOFinance_OR._837_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCO837Page(driver);
 	}
 	
 	public MCORateSchedulePage click_Rate_Schedule() {
-		DriverActions.Click(Rate_Schedule, MCOFinance_OR.Rt_sch_ele_name);
+		DriverActions.click(Rate_Schedule, MCOFinance_OR.Rt_sch_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCORateSchedulePage(driver);
 	}
 	
 	public MCOProccodecompatibilityPage click_Proc_code_compatibility() {
-		DriverActions.Click(Proc_code_compatibility, MCOFinance_OR.proc_cd_comp_ele_name);
+		DriverActions.click(Proc_code_compatibility, MCOFinance_OR.proc_cd_comp_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOProccodecompatibilityPage(driver);
 	}
 	
 	public MCOCOBPage click_COB() {
-		DriverActions.Click(COB, MCOFinance_OR.COB);
+		DriverActions.click(COB, MCOFinance_OR.COB);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOCOBPage(driver);
 	}
 	
 	public MCOFundingCapitationPage click_Funding_Capitation() {
-		DriverActions.Click(Funding_Capitation, MCOFinance_OR.fundcapt_ele_name);
+		DriverActions.click(Funding_Capitation, MCOFinance_OR.fundcapt_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOFundingCapitationPage(driver);
 	}
 	
 	public MCOCheckWriteSchedulePage click_Check_Write_Schedule() {
-		DriverActions.Click(Check_Write_Schedule, MCOFinance_OR.Check_Write_Schedule);
+		DriverActions.click(Check_Write_Schedule, MCOFinance_OR.Check_Write_Schedule);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOCheckWriteSchedulePage(driver);
 	}
 	
 	public MCOCheckSelectProcessPage click_Check_Select_Process() {
-		DriverActions.Click(Check_Select_Process, MCOFinance_OR.ck_sel_pr_ele_name);
+		DriverActions.click(Check_Select_Process, MCOFinance_OR.ck_sel_pr_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOCheckSelectProcessPage(driver);
 	}
 	
 	public MCOEDServiceMatrixPage click_ED_Service_Matrix() {
-		DriverActions.Click(ED_Service_Matrix, MCOFinance_OR.ed_src_mat_ele_name);
+		DriverActions.click(ED_Service_Matrix, MCOFinance_OR.ed_src_mat_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOEDServiceMatrixPage(driver);
 	}
 	
 	public MCORAReportsPage click_RA_Reports() {
-		DriverActions.Click(RA_Reports, MCOFinance_OR.ra_rpt_ele_name);
+		DriverActions.click(RA_Reports, MCOFinance_OR.ra_rpt_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCORAReportsPage(driver);

@@ -25,7 +25,7 @@ public class MCOCheckSelectProcessPage {
 	}
 	
 	public MCOHomepage return_home() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOHomepage(driver);

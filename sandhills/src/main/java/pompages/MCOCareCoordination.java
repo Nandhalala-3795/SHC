@@ -41,42 +41,42 @@ public class MCOCareCoordination {
 	}
 	
 	public MCOHomepage return_home() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOHomepage(driver);
 	}
 	
 	public MCOMyCaseLoadPage click_MyCaseLoad() {
-		DriverActions.Click(MyCaseLoad, MCOCareCoordination_OR.mycsld_ele_name);
+		DriverActions.click(MyCaseLoad, MCOCareCoordination_OR.mycsld_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOMyCaseLoadPage(driver);
 	}
 	
 	public MCOCaseLoadmanagementPage click_CaseLoadManagement() {
-		DriverActions.Click(CaseLoadMgnt, MCOCareCoordination_OR.csldmgnt_ele_name);
+		DriverActions.click(CaseLoadMgnt, MCOCareCoordination_OR.csldmgnt_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOCaseLoadmanagementPage(driver);
 	}
 	
 	public MCOSlotSchedulerPage click_SlotScheduler() {
-		DriverActions.Click(SlotScheduler, MCOCareCoordination_OR.sltsch_ele_name);
+		DriverActions.click(SlotScheduler, MCOCareCoordination_OR.sltsch_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOSlotSchedulerPage(driver);
 	}
 	
 	public MCOSISPage click_SIS() {
-		DriverActions.Click(SIS, MCOCareCoordination_OR.SIS_ele_name);
+		DriverActions.click(SIS, MCOCareCoordination_OR.SIS_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOSISPage(driver);
 	}
 	
 	public MCOReferralsandDischargePage click_Referrals_and_Discharge() {
-		DriverActions.Click(Referrals_and_Discharges, MCOCareCoordination_OR.refndis_ele_name);
+		DriverActions.click(Referrals_and_Discharges, MCOCareCoordination_OR.refndis_ele_name);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOReferralsandDischargePage(driver);

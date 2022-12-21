@@ -23,7 +23,7 @@ public class MCOEnrollmentPage {
 	}
 
 	public MCOHomepage return_HOME() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		
 		WaitFactory.waitforloading();
 		

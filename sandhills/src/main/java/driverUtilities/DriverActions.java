@@ -10,16 +10,20 @@ import reports.Logger;
 
 public class DriverActions {
 
-	public static void Click(WebElement Element, String ElementName) {
+	public static boolean click(WebElement element, String elementname) {
+		
+		boolean flag;
 		
 		while(true) {
 			try {
-				if(Element_Present(Element)) {
-					Element.click();
+				if(isElementPresent(element,elementname)) {
+					element.click();
+					flag = true;
 					break;
 				}
 				else {
-					Logger.LogFail("Element '" + ElementName + " is not present");
+					Logger.LogFail("Element '" + elementname + " is not present");
+					flag = false;
 				}
 			}
 			catch(ElementClickInterceptedException e) {
@@ -30,29 +34,30 @@ public class DriverActions {
 				Logger.LogFail("Element not found");
 			}
 		}
+		return flag;
 		
 	}
 	
-	public static void entertext(WebElement ele, String text_to_be_entered, String ElementName) {
+	public static void entertext(WebElement ele, String text_to_be_entered, String elementName) {
 		
 		ele.sendKeys(text_to_be_entered);
 		
-		Logger.LogPass("The given text : "+text_to_be_entered+" is entered in the "+ElementName);
+		Logger.LogInfo("The given text : "+text_to_be_entered+" is entered in the "+elementName);
 	
 	}
 	
-	public static String getTEXT(WebElement ele, String ElementName) {
+	public static String getTEXT(WebElement ele, String elementName) {
 		if(Objects.nonNull(ele.getText())) {
-			Logger.LogInfo("Text is received from element : " + ElementName);
+			Logger.LogInfo("Text is received from element : " + elementName);
 			return ele.getText();
 		}
 		else {
-			return new Exception("No text in the element '"+ ElementName+"'").toString();
+			return new Exception("No text in the element '"+ elementName+"'").toString();
 		}
 		
 	}
 	
-	private static boolean Element_Present (WebElement ele) {
+	private static boolean isElementPresent (WebElement ele, String elementname) {
 		boolean flag = false;
 		try {
 			ele.isDisplayed();
@@ -62,10 +67,10 @@ public class DriverActions {
 			flag = false;
 		} finally {
 			if (flag) {
-				System.out.println("Element is present");
+				Logger.LogInfo(elementname + " : Element is present");
 
 			} else {
-				System.out.println("Unable to locate element");
+				Logger.LogInfo("Unable to locate element" + elementname);
 			}
 		}
 		return flag;

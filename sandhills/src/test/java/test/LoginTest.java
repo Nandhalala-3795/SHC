@@ -17,7 +17,7 @@ public class LoginTest extends BaseClass {
 		
 		MCOLoginpage loginpg = home.ClickMCOloginlink();
 		
-		loginpg.Login("shc/shctest", "Letmein@13");
+		loginpg.Login(get_Username(), get_Password());
 		
 		WaitFactory.waitforloading();
 		

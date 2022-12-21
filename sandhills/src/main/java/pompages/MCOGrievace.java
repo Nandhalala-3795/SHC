@@ -25,7 +25,7 @@ public class MCOGrievace {
 	}
 	
 	public MCOHomepage return_home() {
-		DriverActions.Click(Home, common_OR.home_elementname);
+		DriverActions.click(Home, common_OR.home_elementname);
 		if(Loading.isDisplayed())
 			WaitFactory.waitforloading();
 		return new MCOHomepage(driver);

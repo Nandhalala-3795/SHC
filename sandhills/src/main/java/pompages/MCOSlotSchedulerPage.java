@@ -24,7 +24,7 @@ public class MCOSlotSchedulerPage {
 	}
 	
 	public MCOHomepage return_home() {
-		DriverActions.Click(home, common_OR.home_elementname);
+		DriverActions.click(home, common_OR.home_elementname);
 		return new MCOHomepage(driver);
 	}
 	
