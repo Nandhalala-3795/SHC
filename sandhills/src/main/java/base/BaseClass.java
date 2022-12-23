@@ -6,9 +6,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
 import constants.ConfigurationValues;
-import driverUtilities.Driver;
-import driverUtilities.DriverManager;
+import driverutilities.Driver;
+import driverutilities.DriverManager;
 import fileReaders.ConfigurationReader;
+import reports.Logger;
 
 @Listeners(listeners.Listeners.class)
 
@@ -30,7 +31,10 @@ public class BaseClass {
 	
 	@AfterMethod
 	public void teardown() {
-		Driver.quitDriver();
+		if(Driver.quitDriver())
+			Logger.LogInfo("Driver is closed");
+		else
+			Logger.LogFail("Driver is not closed");
 		
 	}
 	

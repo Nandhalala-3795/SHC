@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import driverUtilities.DriverActions;
+import driverutilities.DriverActions;
 import objectRepository.Home_OR;
 import objectRepository.common_OR;
 import reports.Logger;
@@ -37,9 +37,11 @@ public class Home {
 	}
 	
 	public MCOLoginpage ClickMCOloginlink(){
+		if(Loading.isDisplayed())
+			WaitFactory.waitforloading();
 		if(mco_link.isDisplayed()&&!Loading.isDisplayed()) {
 			if(DriverActions.click(mco_link,Home_OR.mco_link_ele_name))
-				Logger.LogInfo("");
+				Logger.LogInfo("MCO Link is clicked");
 		}
 		
 		WaitFactory.waitforloading();

@@ -1,169 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="0" skipped="1">
+<testng-results ignored="10" total="11" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[----[INFO]----MCO LINK : Element is present]]>
+    </line>
+    <line>
+      <![CDATA[----[INFO]----MCO Link is clicked]]>
+    </line>
+    <line>
+      <![CDATA[----[INFO]----The given text : shc/shctest is entered in the Username text feild]]>
+    </line>
+    <line>
+      <![CDATA[----[INFO]----The given text : Letmein@13 is entered in the Password text field]]>
+    </line>
+    <line>
+      <![CDATA[----[INFO]----Login button : Element is present]]>
+    </line>
+    <line>
+      <![CDATA[----[INFO]----Reports : Element is present]]>
+    </line>
+    <line>
+      <![CDATA[----[PASS]----ReportsNavigationTest is passed]]>
+    </line>
+    <line>
+      <![CDATA[----[INFO]----Driver is closed]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-19T08:50:11 GMT-05:00" name="Default suite" finished-at="2022-12-19T08:53:23 GMT-05:00" duration-ms="192265">
+  <suite started-at="2022-12-21T06:33:21 GMT-05:00" name="Default suite" finished-at="2022-12-21T06:33:49 GMT-05:00" duration-ms="27349">
     <groups>
     </groups>
-    <test started-at="2022-12-19T08:50:11 GMT-05:00" name="Default test" finished-at="2022-12-19T08:53:23 GMT-05:00" duration-ms="192265">
-      <class name="test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:test.LoginTest@d5b810e]" started-at="2022-12-19T08:50:11 GMT-05:00" name="setup" finished-at="2022-12-19T08:53:23 GMT-05:00" duration-ms="192121" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'ALPHI-NANDHALAL', ip: '10.23.124.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [65a3d926a71f00218b0d5992923ba439, get {url=https://angular.alphaplusshc.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ALPHI-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54909}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54909/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 65a3d926a71f00218b0d5992923ba439]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'ALPHI-NANDHALAL', ip: '10.23.124.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [65a3d926a71f00218b0d5992923ba439, get {url=https://angular.alphaplusshc.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ALPHI-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54909}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54909/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 65a3d926a71f00218b0d5992923ba439
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at base.BaseClass.setup(BaseClass.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-... 44 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+    <test started-at="2022-12-21T06:33:21 GMT-05:00" name="Default test" finished-at="2022-12-21T06:33:49 GMT-05:00" duration-ms="27349">
+      <class name="test.NavigationTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test.NavigationTests@37d4349f]" started-at="2022-12-21T06:33:21 GMT-05:00" name="setup" finished-at="2022-12-21T06:33:35 GMT-05:00" duration-ms="13767" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="mcologintest()[pri:0, instance:test.LoginTest@d5b810e]" started-at="2022-12-19T08:53:23 GMT-05:00" name="mcologintest" finished-at="2022-12-19T08:53:23 GMT-05:00" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[java.util.concurrent.TimeoutException
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'ALPHI-NANDHALAL', ip: '10.23.124.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [65a3d926a71f00218b0d5992923ba439, get {url=https://angular.alphaplusshc.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ALPHI-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54909}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54909/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 65a3d926a71f00218b0d5992923ba439]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'ALPHI-NANDHALAL', ip: '10.23.124.166', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [65a3d926a71f00218b0d5992923ba439, get {url=https://angular.alphaplusshc.com}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\ALPHI-~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54909}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54909/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 65a3d926a71f00218b0d5992923ba439
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:49)
-at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:56)
-at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:98)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:181)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:332)
-at base.BaseClass.setup(BaseClass.java:27)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.util.concurrent.TimeoutException
-at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-... 44 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="ReportsNavigationTest()[pri:7, instance:test.NavigationTests@37d4349f]" started-at="2022-12-21T06:33:35 GMT-05:00" name="ReportsNavigationTest" finished-at="2022-12-21T06:33:48 GMT-05:00" duration-ms="13198" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[----[INFO]----MCO LINK : Element is present]]>
+            </line>
+            <line>
+              <![CDATA[----[INFO]----MCO Link is clicked]]>
+            </line>
+            <line>
+              <![CDATA[----[INFO]----The given text : shc/shctest is entered in the Username text feild]]>
+            </line>
+            <line>
+              <![CDATA[----[INFO]----The given text : Letmein@13 is entered in the Password text field]]>
+            </line>
+            <line>
+              <![CDATA[----[INFO]----Login button : Element is present]]>
+            </line>
+            <line>
+              <![CDATA[----[INFO]----Reports : Element is present]]>
+            </line>
+            <line>
+              <![CDATA[----[PASS]----ReportsNavigationTest is passed]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- mcologintest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.LoginTest@d5b810e]" started-at="2022-12-19T08:53:23 GMT-05:00" name="teardown" finished-at="1969-12-31T19:00:00 GMT-05:00" duration-ms="-1671458003271" status="SKIP">
+        </test-method> <!-- ReportsNavigationTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.NavigationTests@37d4349f]" started-at="2022-12-21T06:33:48 GMT-05:00" name="teardown" finished-at="2022-12-21T06:33:49 GMT-05:00" duration-ms="312" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[----[INFO]----Driver is closed]]>
+            </line>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- test.LoginTest -->
+      </class> <!-- test.NavigationTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

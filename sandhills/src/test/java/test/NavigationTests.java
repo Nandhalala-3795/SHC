@@ -33,6 +33,7 @@ public class NavigationTests extends BaseClass {
 	
 	@Test(priority = 01)
 	public void PatientNavigationTest() {
+		
 		Home home = new Home(getDriver());
 		
 		MCOLoginpage mcologinpg = home.ClickMCOloginlink();

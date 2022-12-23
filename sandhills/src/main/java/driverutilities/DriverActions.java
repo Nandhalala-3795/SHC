@@ -1,4 +1,4 @@
-package driverUtilities;
+package driverutilities;
 
 import java.util.Objects;
 
@@ -31,7 +31,7 @@ public class DriverActions {
 			}
 			catch(NoSuchElementException e) {
 				e.printStackTrace();
-				Logger.LogFail("Element not found");
+				Logger.LogFail(elementname +" : Element not found");
 			}
 		}
 		return flag;
@@ -60,11 +60,10 @@ public class DriverActions {
 	private static boolean isElementPresent (WebElement ele, String elementname) {
 		boolean flag = false;
 		try {
-			ele.isDisplayed();
-			flag = true;
+			if(Objects.nonNull(ele)&&ele.isDisplayed())
+				flag = true;
 		} catch (Exception e) {
 			e.printStackTrace();
-			flag = false;
 		} finally {
 			if (flag) {
 				Logger.LogInfo(elementname + " : Element is present");
