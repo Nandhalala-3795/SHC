@@ -10,6 +10,13 @@ import reports.Logger;
 
 public class DriverActions {
 
+	/**
+	 * Click method to click an webelement
+	 * @param element
+	 * @param elementname
+	 * @return
+	 */
+	
 	public static boolean click(WebElement element, String elementname) {
 		
 		boolean flag;
